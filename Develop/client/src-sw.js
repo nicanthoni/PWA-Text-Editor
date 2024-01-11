@@ -25,7 +25,19 @@ warmStrategyCache({
 });
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
+// --DONE-> TODO: Implement asset caching
 
-// TODO: Implement asset caching
-// do we just need to update this from page' to 'asset' caching?
+registerRoute(
+  // callback function that filters the requests we want to cache (JS and CSS files for this one)
+  ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
+  new StaleWhileRevalidate({
+    cacheName: 'asset-cache',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  })
+);
+
 registerRoute();
