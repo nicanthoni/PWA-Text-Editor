@@ -40,4 +40,5 @@ registerRoute(
   })
 );
 
+// Any need to call this? It came included, but not sure its needed.
 registerRoute();
