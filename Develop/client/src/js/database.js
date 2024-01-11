@@ -12,7 +12,7 @@ const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
+// --DONE-> TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
 console.error('putDb not implemented');
 console.log('PUT to the database');
@@ -25,7 +25,7 @@ console.log('PUT to the database');
 
 };
 
-// TODO: Add logic for a method that gets all the content from the database
+// --DONE-> TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   console.error('getDB not implemented');
   console.log('GET from the database');
