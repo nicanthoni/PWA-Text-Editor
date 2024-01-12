@@ -5,8 +5,9 @@
 
 ## Screenshots
 
-![ScreenShot]()
-![ScreenShot]()
+![ScreenShot](./screenshots/Screenshot%201.png)
+![ScreenShot](./screenshots/Screenshot%202.png)
+![ScreenShot](./screenshots/Screenshot%203.png)
 
 ## Tech/framework used
 - Javascript, HTML, CSS, express.js, babel, webpack.
