@@ -19,13 +19,13 @@ console.log('PUT to the database');
   const editorDB = await openDB('jate', 1);
   const tx = editorDB.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  const request = store.put({ id: id, text: content });
+  const request = store.put({ id: 1, value: content });
   const result = await request;
   console.log('Data saved to the database', result);
 
 };
 
-// --DONE-> TODO: Add logic for a method that gets all the content from the database
+// --DONE-> TODO: Add logic for a method that gets the content from the database
 export const getDb = async () => {
   console.error('getDB not implemented');
   console.log('GET from the database');
@@ -36,11 +36,11 @@ export const getDb = async () => {
   // Open up the chosen object store.
   const store = tx.objectStore('jate');
  // .getAll() method to get all data in the database
-  const request = store.getAll();
+  const request = store.get(1);
   // Get confirmation of the request`
   const result = await request;
   console.log('result.value', result);
-  return result;
+  return result?.value;
 };
 
 initdb();
