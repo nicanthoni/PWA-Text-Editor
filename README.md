@@ -13,10 +13,10 @@
 - Javascript, HTML, CSS, express.js, babel, webpack.
 
 ## Deployed application link
-- Deplyed application: 
+- Deplyed application: https://pwa-text-editor-8p03.onrender.com
 
 ## Usage
--
+- View packae.json file for scripts in order to install, buid, and run all necessary to use this application.  Once the application is opened, you may simply type into the numbers fields on the text editor application, and see the data persist once going offline, or switching from local host to the installed application.
 
 ## License
 MIT © [nicanthoni]()
