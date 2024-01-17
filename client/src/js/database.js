@@ -14,7 +14,6 @@ const initdb = async () =>
 
 // logic that accepts some content and adds it to the database
 export const putDb = async (content) => {
-console.error('putDb not implemented');
 console.log('PUT to the database');
   const editorDB = await openDB('jate', 1);
   const tx = editorDB.transaction('jate', 'readwrite');
@@ -27,7 +26,6 @@ console.log('PUT to the database');
 
 // logic that gets the content from the database
 export const getDb = async () => {
-  console.error('getDB not implemented');
   console.log('GET from the database');
   // Create a connection to the db & version we want to use
   const contactDb = await openDB('jate', 1);
